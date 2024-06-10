@@ -38,7 +38,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM2 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -70,7 +69,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM1 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__pfet_01v8_draw]
 if {$device == ""} {
@@ -102,7 +100,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM9 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__pfet_01v8_draw]
 if {$device == ""} {
@@ -134,7 +131,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM20 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -166,7 +162,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM3 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -198,7 +193,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM4 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -230,7 +224,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM5 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -262,7 +255,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM6 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__pfet_01v8_draw]
 if {$device == ""} {
@@ -294,7 +286,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM7 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__pfet_01v8_draw]
 if {$device == ""} {
@@ -326,7 +317,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM8 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -358,7 +348,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM10 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -390,7 +379,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM11 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__cap_mim_m3_1_draw]
 if {$device == ""} {
@@ -422,7 +410,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XC1 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -454,7 +441,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM1 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -486,7 +472,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM2 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__pfet_01v8_draw]
 if {$device == ""} {
@@ -518,7 +503,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM7 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -550,7 +534,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM4 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -582,7 +565,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM5 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__pfet_01v8_draw]
 if {$device == ""} {
@@ -614,7 +596,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM6 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -646,7 +627,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM3 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__pfet_01v8_draw]
 if {$device == ""} {
@@ -678,7 +658,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM8 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__cap_mim_m3_1_draw]
 if {$device == ""} {
@@ -710,7 +689,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XC2 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_05v0_nvt_draw]
 if {$device == ""} {
@@ -742,7 +720,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM9 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_05v0_nvt_draw]
 if {$device == ""} {
@@ -774,7 +751,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM10 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__pfet_01v8_draw]
 if {$device == ""} {
@@ -806,7 +782,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM3 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -838,7 +813,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM1 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -870,7 +844,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM2 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -902,7 +875,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM3 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__nfet_01v8_draw]
 if {$device == ""} {
@@ -934,7 +906,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XM4 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__res_xhigh_po_0p69_draw]
 if {$device == ""} {
@@ -966,7 +937,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XR1 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__res_xhigh_po_0p69_draw]
 if {$device == ""} {
@@ -998,7 +968,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XR2 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__res_xhigh_po_0p69_draw]
 if {$device == ""} {
@@ -1030,7 +999,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XR3 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__res_xhigh_po_0p69_draw]
 if {$device == ""} {
@@ -1062,7 +1030,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XR4 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__res_xhigh_po_0p69_draw]
 if {$device == ""} {
@@ -1094,7 +1061,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XR4 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__res_xhigh_po_0p69_draw]
 if {$device == ""} {
@@ -1126,7 +1092,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XR3 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__res_xhigh_po_0p69_draw]
 if {$device == ""} {
@@ -1158,7 +1123,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XR2 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_pr__res_xhigh_po_0p69_draw]
 if {$device == ""} {
@@ -1190,7 +1154,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device XR1 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_sc_hd__buf_1_draw]
 if {$device == ""} {
@@ -1222,7 +1185,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device x5 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_sc_hd__buf_1_draw]
 if {$device == ""} {
@@ -1254,7 +1216,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device x6 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_sc_hd__buf_1_draw]
 if {$device == ""} {
@@ -1286,7 +1247,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device x7 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_sc_hd__buf_1_draw]
 if {$device == ""} {
@@ -1318,7 +1278,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device x8 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_sc_hd__diode_2_draw]
 if {$device == ""} {
@@ -1350,7 +1309,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device x9 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_sc_hd__inv_2_draw]
 if {$device == ""} {
@@ -1382,7 +1340,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device x14 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_sc_hd__diode_2_draw]
 if {$device == ""} {
@@ -1414,7 +1371,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device x4 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_sc_hd__diode_2_draw]
 if {$device == ""} {
@@ -1446,7 +1402,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device x10 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_sc_hd__diode_2_draw]
 if {$device == ""} {
@@ -1478,7 +1433,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device x11 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_sc_hd__diode_2_draw]
 if {$device == ""} {
@@ -1510,7 +1464,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device x12 area is $a"
 set totalarea [expr $totalarea + $area]
 set device [info commands sky130::sky130_fd_sc_hd__decap_6_draw]
 if {$device == ""} {
@@ -1542,7 +1495,6 @@ if {$is_gencell == true} {
 set w [expr [lindex $v 2] - [lindex $v 0]]
 set h [expr [lindex $v 3] - [lindex $v 1]]
 set area [expr $w * $h]
-puts stdout "single device x13 area is $a"
 set totalarea [expr $totalarea + $area]
 resumeall
 refresh

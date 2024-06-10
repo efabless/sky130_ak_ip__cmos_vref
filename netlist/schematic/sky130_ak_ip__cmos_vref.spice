@@ -1,4 +1,4 @@
-** sch_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/sky130_ak_ip__cmos_vref.sch
+** sch_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/sky130_ak_ip__cmos_vref.sch
 .subckt sky130_ak_ip__cmos_vref avdd18 avss trim0 vbg vptat trim1 trim2 trim3 dvdd dvss ena vbgsc vbgtg
 *.PININFO vbg:O avss:B avdd18:B dvss:B ena:I vbgsc:O vbgtg:O trim3:I trim2:I trim1:I trim0:I vptat:O dvdd:B
 XM2 vref vref vptat avss sky130_fd_pr__nfet_01v8 L=10 W=2 nf=1 m=1
@@ -33,8 +33,8 @@ x13 dvss dvss dvdd dvdd sky130_fd_sc_hd__decap_6
 .ends
 
 * expanding   symbol:  sbvfcm.sym # of pins=5
-** sym_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/sbvfcm.sym
-** sch_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/sbvfcm.sch
+** sym_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/sbvfcm.sym
+** sch_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/sbvfcm.sch
 .subckt sbvfcm vdd pbias nbias vx vss
 *.PININFO vss:B vdd:B vx:B pbias:B nbias:B
 XM3 net1 vbias_st vx vss sky130_fd_pr__nfet_01v8 L=2 W=100 nf=1 m=1
@@ -58,8 +58,8 @@ Vm_b2 vdd net7 0
 
 
 * expanding   symbol:  output_amp.sym # of pins=6
-** sym_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/output_amp.sym
-** sch_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/output_amp.sch
+** sym_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/output_amp.sym
+** sch_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/output_amp.sch
 .subckt output_amp vdd vo vp vn ibias vss
 *.PININFO vp:I vn:I ibias:I vo:O vss:I vdd:I
 XM1 ibias ibias vss vss sky130_fd_pr__nfet_01v8 L=1 W=2.5 nf=1 m=1
@@ -87,8 +87,8 @@ XM10 vo_pre vp net8 vss sky130_fd_pr__nfet_05v0_nvt L=2 W=20 nf=1 m=1
 
 
 * expanding   symbol:  trim_res.sym # of pins=6
-** sym_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/trim_res.sym
-** sch_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/trim_res.sch
+** sym_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/trim_res.sym
+** sch_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/trim_res.sch
 .subckt trim_res A trim0 trim2 trim3 trim1 B
 *.PININFO trim0:I trim1:I trim2:I trim3:I B:B A:B
 XM1 A trim3 net3 B sky130_fd_pr__nfet_01v8 L=2 W=10 nf=1 m=1
