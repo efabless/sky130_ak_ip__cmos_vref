@@ -1,4 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -41,6 +41,7 @@ N 270 100 370 100 {
 lab=GND}
 N 170 -50 170 10 {
 lab=GND}
+N -160 -50 -160 10 {}
 C {devices/vsource.sym} -190 -270 0 0 {name=Vavdd value="DC 1.8"}
 C {devices/vdd.sym} -190 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -190 -240 0 0 {name=l8 lab=GND}
@@ -78,10 +79,14 @@ device="ceramic capacitor"}
 C {devices/gnd.sym} 320 100 0 0 {name=l9 lab=GND}
 C {devices/vdd.sym} -190 -130 0 0 {name=l11 lab=dvdd}
 C {devices/vsource.sym} -190 -100 0 0 {name=Vsense2 value="dc 0"}
-C {devices/gnd.sym} -160 10 0 0 {name=l12 lab=GND}
 C {devices/res.sym} 370 70 0 0 {name=R1
 value=\{Rload\}
 device=resistor
 m=1}
 C {sky130_fd_pr/corner.sym} 60 -330 0 0 {name=CORNER only_toplevel=false corner=\{corner\}}
 C {devices/gnd.sym} -160 130 0 0 {name=l2 lab=GND}
+C {devices/code.sym} 340 -320 0 0 {name=STDCELLPATH
+
+only_toplevel=true
+format="tcleval( @value )"
+value=".include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice"}

@@ -71,7 +71,7 @@ quit
 "}
 C {devices/lab_pin.sym} 380 -80 0 1 {name=l10 sig_type=std_logic lab=vbg}
 C {devices/gnd.sym} 170 -20 0 0 {name=l20 lab=GND}
-C {/home/moduhub/work/sky130_ak_ip__cmos_vref/xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
+C {sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
 C {devices/vdd.sym} -210 -70 0 0 {name=l1 lab=avdd}
 C {devices/vdd.sym} -190 100 0 0 {name=l4 lab=dvdd}
 C {devices/vsource.sym} -30 -270 0 0 {name=Vdvdd value="DC \{Vdvdd\}"}
@@ -97,3 +97,8 @@ m=1}
 C {devices/lab_pin.sym} -340 -20 0 0 {name=l12 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} 170 130 0 1 {name=l2 sig_type=std_logic lab=vptat}
 C {devices/gnd.sym} -160 130 0 0 {name=l13 lab=GND}
+C {devices/code.sym} 330 -320 0 0 {name=STDCELLPATH
+
+only_toplevel=true
+format="tcleval( @value )"
+value=".include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice"}

@@ -83,3 +83,8 @@ device="ceramic capacitor"}
 C {devices/gnd.sym} 310 100 0 0 {name=l3 lab=GND}
 C {devices/vsource.sym} -190 -330 0 0 {name=Vin value="DC 0 AC 1"}
 C {devices/gnd.sym} -160 130 0 0 {name=l2 lab=GND}
+C {devices/code.sym} 360 -340 0 0 {name=STDCELLPATH
+
+only_toplevel=true
+format="tcleval( @value )"
+value=".include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice"}

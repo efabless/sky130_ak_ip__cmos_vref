@@ -92,3 +92,8 @@ C {devices/gnd.sym} 170 10 0 0 {name=l3 lab=GND}
 C {sky130_fd_pr/corner.sym} 60 -330 0 0 {name=CORNER only_toplevel=false corner=\{corner\}}
 C {devices/gnd.sym} -160 130 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 200 130 0 1 {name=p4 sig_type=std_logic lab=vptat}
+C {devices/code.sym} 340 -320 0 0 {name=STDCELLPATH
+
+only_toplevel=true
+format="tcleval( @value )"
+value=".include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice"}

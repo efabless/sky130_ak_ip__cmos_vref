@@ -1,4 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -18,7 +18,7 @@ lab=GND}
 N 130 -20 170 -20 {
 lab=GND}
 N -160 10 -120 10 {
-lab=GND}
+lab=#net3}
 N 130 70 190 70 {
 lab=vbgsc}
 N 130 100 190 100 {
@@ -32,7 +32,7 @@ lab=vbg}
 N 450 -40 530 -40 {
 lab=GND}
 N 130 130 170 130 {
-lab=#net3}
+lab=#net4}
 N -150 130 -120 130 {
 lab=trim3}
 N -150 130 -150 150 {
@@ -51,12 +51,19 @@ N -390 40 -390 150 {
 lab=trim0}
 N -390 210 -150 210 {
 lab=GND}
-N 120 200 140 200 {}
-N 120 200 120 260 {}
-N 120 260 220 260 {}
-N 220 200 220 260 {}
-N 200 200 220 200 {}
-N 170 130 170 160 {}
+N 120 200 140 200 {
+lab=GND}
+N 120 200 120 260 {
+lab=GND}
+N 120 260 220 260 {
+lab=GND}
+N 220 200 220 260 {
+lab=GND}
+N 200 200 220 200 {
+lab=GND}
+N 170 130 170 160 {
+lab=#net4}
+N -160 -50 -160 10 {}
 C {devices/vsource.sym} -130 -270 0 0 {name=Vavdd value="dc \{Vavdd\}"}
 C {devices/vdd.sym} -130 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -130 -240 0 0 {name=l8 lab=GND}
@@ -122,7 +129,6 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 490 -40 0 0 {name=l9 lab=GND}
 C {devices/vdd.sym} -190 -130 0 0 {name=l11 lab=dvdd}
-C {devices/gnd.sym} -160 10 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 190 70 0 1 {name=l3 sig_type=std_logic lab=vbgsc}
 C {devices/lab_pin.sym} 190 100 0 1 {name=l13 sig_type=std_logic lab=vbgtg}
 C {devices/res.sym} 450 -70 0 0 {name=R1
@@ -159,3 +165,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/code.sym} 360 -330 0 0 {name=STDCELLPATH
+
+only_toplevel=true
+format="tcleval( @value )"
+value=".include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice"}

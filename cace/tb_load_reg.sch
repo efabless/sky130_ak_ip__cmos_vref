@@ -1,4 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -16,15 +16,15 @@ lab=dvdd}
 N -160 70 -160 100 {
 lab=dvdd}
 N -160 130 -120 130 {
-lab=#net1}
+lab=GND}
 N -290 -20 -120 -20 {
-lab=#net2}
+lab=#net1}
 N -290 -70 -290 -20 {
-lab=#net2}
+lab=#net1}
 N -190 -50 -120 -50 {
-lab=#net3}
+lab=#net2}
 N -190 -70 -190 -50 {
-lab=#net3}
+lab=#net2}
 N 130 40 270 40 {
 lab=vbg}
 N 130 -50 170 -50 {
@@ -39,6 +39,7 @@ N 270 40 370 40 {
 lab=vbg}
 N 170 -50 170 10 {
 lab=GND}
+N -160 -50 -160 10 {}
 C {devices/vsource.sym} -190 -270 0 0 {name=Vavdd value="DC \{Vavdd\}"}
 C {devices/vdd.sym} -190 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -190 -240 0 0 {name=l8 lab=GND}
@@ -72,7 +73,11 @@ C {devices/gnd.sym} -30 -240 0 0 {name=l6 lab=GND}
 C {devices/gnd.sym} 320 100 0 0 {name=l9 lab=GND}
 C {devices/vdd.sym} -190 -130 0 0 {name=l11 lab=dvdd}
 C {devices/vsource.sym} -190 -100 0 0 {name=Vsense2 value="dc 0"}
-C {devices/gnd.sym} -160 10 0 0 {name=l12 lab=GND}
 C {sky130_fd_pr/corner.sym} 60 -330 0 0 {name=CORNER only_toplevel=false corner=\{corner\}}
 C {devices/isource.sym} 320 70 0 0 {name=Iload value=\{Iload|maximum\}}
 C {devices/gnd.sym} -160 130 0 0 {name=l2 lab=GND}
+C {devices/code.sym} 350 -320 0 0 {name=STDCELLPATH
+
+only_toplevel=true
+format="tcleval( @value )"
+value=".include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice"}

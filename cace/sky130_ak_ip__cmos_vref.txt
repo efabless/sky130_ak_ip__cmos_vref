@@ -379,6 +379,7 @@ electrical_parameters {
 		minimum: ss
 		typical: tt
 		maximum: ff
+
 	}
 
 	+

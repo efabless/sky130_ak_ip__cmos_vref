@@ -1,4 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -60,7 +60,7 @@ quit
 "}
 C {devices/lab_pin.sym} 270 40 0 1 {name=l10 sig_type=std_logic lab=vref}
 C {devices/gnd.sym} 170 10 0 0 {name=l20 lab=GND}
-C {../xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
+C {sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
 C {devices/vdd.sym} -290 -130 0 0 {name=l1 lab=avdd}
 C {devices/vdd.sym} -200 70 0 0 {name=l4 lab=dvdd}
 C {devices/vsource.sym} -30 -270 0 0 {name=Vdvdd value="DC \{Vdvdd\}"}
@@ -78,3 +78,8 @@ C {sky130_fd_pr/corner.sym} 60 -330 0 0 {name=CORNER only_toplevel=false corner=
 C {devices/ammeter.sym} -290 -100 0 0 {name=Vmeas_ana savecurrent=true}
 C {devices/ammeter.sym} -190 -100 0 0 {name=Vmeas_dig savecurrent=true}
 C {devices/gnd.sym} -160 130 0 0 {name=l2 lab=GND}
+C {devices/code.sym} 330 -330 0 0 {name=STDCELLPATH
+
+only_toplevel=true
+format="tcleval( @value )"
+value=".include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice"}
