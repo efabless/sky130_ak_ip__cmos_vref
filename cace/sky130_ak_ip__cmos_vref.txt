@@ -337,9 +337,7 @@ electrical_parameters {
 
 		+
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate:  ss sf tt fs ff
 	}
 
 	+
@@ -376,9 +374,8 @@ electrical_parameters {
 
 		+
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate:  ss sf tt fs ff
+
 
 	}
 
@@ -506,9 +503,8 @@ electrical_parameters {
 
 		+
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate:  ss sf tt fs ff
+
 	}
 
 	+
@@ -538,9 +534,8 @@ electrical_parameters {
 
 		+
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate:  ss sf tt fs ff
+
 	}
 
 	+
@@ -576,9 +571,8 @@ electrical_parameters {
 
 		+
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate:  ss sf tt fs ff
+
 	}
 
 	+
@@ -608,9 +602,8 @@ electrical_parameters {
 
 		+
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate:  ss sf tt fs ff
+
 	}
 
 	+
@@ -646,7 +639,8 @@ electrical_parameters {
 
 		+
 		name: corner
-		typical: tt
+		enumerate:  ss sf tt fs ff
+
 	}
 
 	+
@@ -687,7 +681,8 @@ electrical_parameters {
 
 		+
 		name: corner
-		typical: tt
+		enumerate:  ss sf tt fs ff
+
 	}
 
 	+
@@ -729,9 +724,8 @@ electrical_parameters {
 
 		+
 		name: corner
-		minimum: ff
-		typical: tt
-		maximum: ss
+		enumerate:  ss sf tt fs ff
+
 	}
 
 
@@ -798,9 +792,8 @@ electrical_parameters {
 
 		+
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate:  ss sf tt fs ff
+
 	}
 
 	+

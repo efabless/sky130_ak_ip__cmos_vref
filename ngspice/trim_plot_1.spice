@@ -63,7 +63,7 @@ quit
 .endc
 
 
-.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice ff
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice ss
  .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 **** end user architecture code
 **.ends

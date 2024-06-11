@@ -1,0 +1,501 @@
+<HTML>
+<BODY>
+<H1> CACE 4.0 datasheet </H1>
+
+
+<HR>
+
+<FONT size=+1><B>sky130_ak_ip__cmos_vref</B></FONT>
+
+
+<HR>
+
+<I> All-CMOS voltage reference based on the NFET threshold voltage </I><BR><BR>
+<TABLE border="1" frame="box" rules="none" width="40%" cellspacing="0"
+	cellpadding="2" bgcolor="#ffffdd">
+<TBODY>
+<TR>
+<TD> PDK:
+<TD> sky130A
+</TR>
+</TBODY>
+</TABLE>
+<BR>
+
+<TABLE border="1" frame="box" rules="none" width="40%" cellspacing="0"
+	cellpadding="2" bgcolor="#ffffdd">
+<TBODY>
+<TR>
+<TD> Designer:
+<TD> Adan Kvitschal
+</TR>
+<TR>
+<TD> Company:
+<TD> ModuHub Tecnologia LTDA
+</TR>
+<TR>
+<TD> Created:
+<TD> March 8, 2024
+</TR>
+<TR>
+<TD> Last modified:
+<TD> June 10, 2024 at 11:08pm
+</TR>
+<TR>
+<TD> License:
+<TD> Apache 2.0
+</TR>
+</TBODY>
+</TABLE>
+<H2> Project dependencies </H2>
+<BLOCKQUOTE>
+   (<B>sky130_ak_ip__cmos_vref</B> has no external dependencies.)
+</BLOCKQUOTE>
+<H2> Pin names and descriptions </H2>
+
+<BLOCKQUOTE>
+   <CENTER>
+      <IMG SRC=sky130_ak_ip__cmos_vref_sym.svg WIDTH=30%>
+      <BR>
+      <I>Project schematic symbol</I>
+      <BR>
+   </CENTER>
+</BLOCKQUOTE>
+
+<TABLE border="1" frame="box" rules="all" width="80%" cellspacing="0"
+	cellpadding="2" bgcolor="#eeeeff">
+<TBODY>
+<TR>
+<TD> <I>pin name</I><TD> <I>description</I><TD> <I>type</I><TD> <I>direction</I><TD> <I>Vmin</I><TD> <I>Vmax</I><TD> <I>notes</I></TR>
+<TR>
+<TD>
+</TR>
+<TR>
+<TD> <B>vbg</B>
+<TD> Bandgap/Reference Voltage Output
+<TD> analog
+<TD> output
+<TD> avss - 0.3
+<TD> avdd + 0.3
+<TD> 
+</TR>
+<TR>
+<TD> <B>vbgsc</B>
+<TD> 1024mV scaled reference voltage
+<TD> analog
+<TD> output
+<TD> avss - 0.3
+<TD> avdd + 0.3
+<TD> 
+</TR>
+<TR>
+<TD> <B>vbgtg</B>
+<TD> 1048mV scaled reference voltage
+<TD> analog
+<TD> output
+<TD> avss - 0.3
+<TD> avdd + 0.3
+<TD> 
+</TR>
+<TR>
+<TD> <B>vptat</B>
+<TD> PTAT Voltage Output
+<TD> analog
+<TD> output
+<TD> avss - 0.3
+<TD> avdd + 0.3
+<TD> 
+</TR>
+<TR>
+<TD> <B>avdd18</B>
+<TD> Positive analog power supply
+<TD> power
+<TD> inout
+<TD> 1.62
+<TD> 1.98
+<TD> 
+</TR>
+<TR>
+<TD> <B>dvdd</B>
+<TD> Positive digital power supply
+<TD> power
+<TD> inout
+<TD> 1.62
+<TD> 1.98
+<TD> 
+</TR>
+<TR>
+<TD> <B>avss</B>
+<TD> Analog ground
+<TD> ground
+<TD> inout
+<TD> -0.3
+<TD> 0.3
+<TD> 
+</TR>
+<TR>
+<TD> <B>dvss</B>
+<TD> Digital ground
+<TD> ground
+<TD> inout
+<TD> -0.3
+<TD> 0.3
+<TD> 
+</TR>
+<TR>
+<TD> <B>ena</B>
+<TD> Enable
+<TD> digital
+<TD> input
+<TD> dgnd-0.3
+<TD> dvdd+0.3
+<TD> 
+</TR>
+<TR>
+<TD> <B>trim0</B>
+<TD> Trim bit 0
+<TD> digital
+<TD> input
+<TD> dgnd-0.3
+<TD> dvdd+0.3
+<TD> 
+</TR>
+<TR>
+<TD> <B>trim1</B>
+<TD> Trim bit 1
+<TD> digital
+<TD> input
+<TD> dgnd-0.3
+<TD> dvdd+0.3
+<TD> 
+</TR>
+<TR>
+<TD> <B>trim2</B>
+<TD> Trim bit 2
+<TD> digital
+<TD> input
+<TD> dgnd-0.3
+<TD> dvdd+0.3
+<TD> 
+</TR>
+<TR>
+<TD> <B>trim3</B>
+<TD> Trim bit 3
+<TD> digital
+<TD> input
+<TD> dgnd-0.3
+<TD> dvdd+0.3
+<TD> 
+</TR>
+</TBODY>
+</TABLE>
+<H2> Default conditions </H2>
+<TABLE border="1" frame="box" rules="all" width="80%" cellspacing="0"
+	cellpadding="2" bgcolor="#ddeeff">
+<TBODY>
+<TR>
+<TD> <I>name</I><TD> <I>description</I><TD> <I>unit</I><TD> <I>minimum</I><TD> <I>typical</I><TD> <I>maximum</I><TD> <I>notes</I></TR>
+<TR>
+<TD>
+</TR>
+<TR>
+<TD> <B>Vdvdd</B>
+<TD> Digital Domain Power Supply value
+<TD> V
+<TD> 
+<TD> 1.8
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>Vavdd</B>
+<TD> Analog domain power supply value
+<TD> V
+<TD> 
+<TD> 1.8
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>Vena</B>
+<TD> Enable pin voltage, active low
+<TD> V
+<TD> 
+<TD> 0
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>RLoad</B>
+<TD> Output load resistance
+<TD> Ω
+<TD> 
+<TD> 10e6
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>CLoad</B>
+<TD> Output load capacitance
+<TD> pF
+<TD> 
+<TD> 0.1
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>Temp</B>
+<TD> Ambient temperature
+<TD> °C
+<TD> 
+<TD> 27
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>Corner</B>
+<TD> Process corner
+<TD> 
+<TD> ss
+<TD> tt
+<TD> ff
+<TD> 
+</TR>
+<TR>
+<TD> <B>Iterations</B>
+<TD> Iterations to run
+<TD> 
+<TD> 1
+<TD> 
+<TD> 10
+<TD> 
+</TR>
+</TBODY>
+</TABLE>
+<H2> Electrical parameters </H2>
+<TABLE border="1" frame="box" rules="all" width="80%" cellspacing="0"
+	cellpadding="2" bgcolor="#ddffff">
+<TBODY>
+<TR>
+<TD> <I>name</I><TD> <I>description</I><TD> <I>unit</I><TD> <I>minimum</I><TD> <I>typical</I><TD> <I>maximum</I><TD> <I>notes</I></TR>
+<TR>
+<TD>
+</TR>
+<TR>
+<TD> <B>Vbg Nominal</B>
+<TD> Nominal Reference Voltage
+<TD> V
+<TD> 1.18
+<TD> 1.20
+<TD> 1.22
+<TD> 
+</TR>
+<TR>
+<TD> <B>Vbgsc Nominal</B>
+<TD> Scaled Reference Voltage of 1024mV
+<TD> mV
+<TD>  
+<TD> 1024
+<TD>  
+<TD> 
+</TR>
+<TR>
+<TD> <B>Vbgtg Nominal</B>
+<TD> Scaled Reference Voltage of 1048mV
+<TD> mV
+<TD>  
+<TD> 1048
+<TD>  
+<TD> 
+</TR>
+<TR>
+<TD> <B>Current consumption</B>
+<TD> Current draw through analog supply, circuit enabled
+<TD> µA
+<TD>  
+<TD> 2
+<TD> 5
+<TD> 
+</TR>
+<TR>
+<TD> <B>Standby current</B>
+<TD> Current draw through analog supply, circuit disabled
+<TD> pA
+<TD>  
+<TD> 250
+<TD> 500
+<TD> 
+</TR>
+<TR>
+<TD> <B>Accuracy vs Process</B>
+<TD> Reference voltage error due to process variation
+<TD> %
+<TD>  
+<TD> 0.2
+<TD> 0.5
+<TD> 
+</TR>
+<TR>
+<TD> <B>Accuracy vs Mismatch</B>
+<TD> Reference voltage error due to mismatch around typical corner
+<TD> %
+<TD>  
+<TD> 0.2
+<TD> 0.5
+<TD> 
+</TR>
+<TR>
+<TD> <B>PSRR @ 1kHz</B>
+<TD> PSRR @ 1kHz
+<TD> dB
+<TD> 60
+<TD> 70
+<TD>  
+<TD> 
+</TR>
+<TR>
+<TD> <B>Temperature Coefficient</B>
+<TD> Vref output Temperature Coefficient
+<TD> ppm/°C
+<TD>  
+<TD> 20
+<TD> 30
+<TD> 
+</TR>
+<TR>
+<TD> <B>Line Regulation</B>
+<TD> Reference voltage stability against supply voltage variation
+<TD> %
+<TD>  
+<TD> 0.05
+<TD> 0.10
+<TD> 
+</TR>
+<TR>
+<TD> <B>Load Regulation</B>
+<TD> Reference voltage stability against load variation
+<TD> %
+<TD>  
+<TD> 0.05
+<TD> 0.10
+<TD> 
+</TR>
+<TR>
+<TD> <B>Output Noise</B>
+<TD> Output Noise
+<TD> nV/√Hz
+<TD>  
+<TD> 20
+<TD> 30
+<TD> 
+</TR>
+</TBODY>
+</TABLE>
+<BR><I>Note:</I> Values taken from Specification<BR>
+<H2> Physical parameters </H2>
+<TABLE border="1" frame="box" rules="all" width="80%" cellspacing="0"
+	cellpadding="2" bgcolor="#eeffff">
+<TBODY>
+<TR>
+<TD> <I>name</I><TD> <I>description</I><TD> <I>unit</I><TD> <I>minimum</I><TD> <I>typical</I><TD> <I>maximum</I><TD> <I>notes</I></TR>
+<TR>
+<TD>
+</TR>
+<TR>
+<TD> <B>area</B>
+<TD> Total circuit layout area
+<TD> µm²
+<TD> 
+<TD> 
+<TD> 50000
+<TD> 
+</TR>
+<TR>
+<TD> <B>LVS errors</B>
+<TD> LVS errors
+<TD> 
+<TD> 
+<TD> 
+<TD> 0
+<TD> 
+</TR>
+<TR>
+<TD> <B>DRC errors</B>
+<TD> DRC errors
+<TD> 
+<TD> 
+<TD> 
+<TD> 0
+<TD> 
+</TR>
+</TBODY>
+</TABLE>
+<BR><I>Note:</I> Values taken from Specification<BR>
+</BODY>
+</HTML>
+
+<BLOCKQUOTE>
+   <CENTER>
+      <IMG SRC=../plots/schematic/vref_vs_temp.png>
+      <BR>
+      <I>Vref vs Temperature</I>
+      <BR>
+      (Values taken from schematic extraction)
+   </CENTER>
+</BLOCKQUOTE>
+
+
+<BLOCKQUOTE>
+   <CENTER>
+      <IMG SRC=../plots/schematic/vref_vs_vsup.png>
+      <BR>
+      <I>Reference Voltage vs Supply Voltage</I>
+      <BR>
+      (Values taken from schematic extraction)
+   </CENTER>
+</BLOCKQUOTE>
+
+
+<BLOCKQUOTE>
+   <CENTER>
+      <IMG SRC=../plots/schematic/vref_vs_trim.png>
+      <BR>
+      <I>Reference Voltage vs Trim Word</I>
+      <BR>
+      (Values taken from schematic extraction)
+   </CENTER>
+</BLOCKQUOTE>
+
+
+<BLOCKQUOTE>
+   <CENTER>
+      <IMG SRC=../plots/schematic/vref_startup.png>
+      <BR>
+      <I>Bandgap Voltage startup time</I>
+      <BR>
+      (Values taken from schematic extraction)
+   </CENTER>
+</BLOCKQUOTE>
+
+
+<BLOCKQUOTE>
+   <CENTER>
+      <IMG SRC=../plots/schematic/vref_vs_process.png>
+      <BR>
+      <I>Reference Voltage vs Process Variation</I>
+      <BR>
+      (Values taken from schematic extraction)
+   </CENTER>
+</BLOCKQUOTE>
+
+
+<BLOCKQUOTE>
+   <CENTER>
+      <IMG SRC=../plots/schematic/vref_vs_mismatch.png>
+      <BR>
+      <I>Reference Voltage vs Mismatch</I>
+      <BR>
+      (Values taken from schematic extraction)
+   </CENTER>
+</BLOCKQUOTE>
+
