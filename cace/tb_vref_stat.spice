@@ -1,7 +1,7 @@
-** sch_path: /foss/designs/sky130_ak_ip__cmos_vref/cace/tb_vref_stat.sch
+** sch_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/cace/tb_vref_stat.sch
 **.subckt tb_vref_stat
 Vavdd avdd GND dc {Vavdd}
-X1 net1 GND dvdd vbg vptat dvdd dvdd GND net2 GND dvdd vbgsc vbgtg sky130_ak_ip__cmos_vref
+X1 net1 GND dvdd vbg vptat dvdd dvdd GND net2 GND net2 vbgsc vbgtg sky130_ak_ip__cmos_vref
 Vsense1 avdd net1 dc 0
 Vdvdd dvdd GND DC {Vdvdd}
 C1 vbg GND {Cload} m=1
@@ -89,8 +89,8 @@ quit
 **.ends
 
 * expanding   symbol:  ../xschem/sky130_ak_ip__cmos_vref.sym # of pins=13
-** sym_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/sky130_ak_ip__cmos_vref.sym
-** sch_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/sky130_ak_ip__cmos_vref.sch
+** sym_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/sky130_ak_ip__cmos_vref.sym
+** sch_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/sky130_ak_ip__cmos_vref.sch
 .subckt sky130_ak_ip__cmos_vref avdd18 avss trim0 vbg vptat trim1 trim2 trim3 dvdd dvss ena vbgsc vbgtg
 *.opin vbg
 *.iopin avss
@@ -143,8 +143,8 @@ x13 dvss dvss dvdd dvdd sky130_fd_sc_hd__decap_6
 
 
 * expanding   symbol:  sbvfcm.sym # of pins=5
-** sym_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/sbvfcm.sym
-** sch_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/sbvfcm.sch
+** sym_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/sbvfcm.sym
+** sch_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/sbvfcm.sch
 .subckt sbvfcm vdd pbias nbias vx vss
 *.iopin vss
 *.iopin vdd
@@ -180,8 +180,8 @@ Vm_b2 vdd net7 0
 
 
 * expanding   symbol:  output_amp.sym # of pins=6
-** sym_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/output_amp.sym
-** sch_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/output_amp.sch
+** sym_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/output_amp.sym
+** sch_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/output_amp.sch
 .subckt output_amp vdd vo vp vn ibias vss
 *.ipin vp
 *.ipin vn
@@ -224,8 +224,8 @@ XM10 vo_pre vp net8 vss sky130_fd_pr__nfet_05v0_nvt L=2 W=20 nf=1 ad='int((nf+1)
 
 
 * expanding   symbol:  trim_res.sym # of pins=6
-** sym_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/trim_res.sym
-** sch_path: /foss/designs/sky130_ak_ip__cmos_vref/xschem/trim_res.sch
+** sym_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/trim_res.sym
+** sch_path: /foss/designs/cheetah-v3/sky130_ak_ip__cmos_vref/xschem/trim_res.sch
 .subckt trim_res A trim0 trim2 trim3 trim1 B
 *.ipin trim0
 *.ipin trim1

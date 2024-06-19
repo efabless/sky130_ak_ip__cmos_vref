@@ -34,12 +34,13 @@ lab=GND}
 N 320 10 320 40 {
 lab=vbg}
 N -160 10 -120 10 {
-lab=GND}
+lab=#net2}
 N 270 40 370 40 {
 lab=vbg}
 N 170 -50 170 10 {
 lab=GND}
-N -160 -50 -160 10 {}
+N -160 -50 -160 10 {
+lab=#net2}
 C {devices/vsource.sym} -190 -270 0 0 {name=Vavdd value="DC \{Vavdd\}"}
 C {devices/vdd.sym} -190 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -190 -240 0 0 {name=l8 lab=GND}
@@ -76,7 +77,7 @@ C {devices/vsource.sym} -190 -100 0 0 {name=Vsense2 value="dc 0"}
 C {sky130_fd_pr/corner.sym} 60 -330 0 0 {name=CORNER only_toplevel=false corner=\{corner\}}
 C {devices/isource.sym} 320 70 0 0 {name=Iload value=\{Iload|maximum\}}
 C {devices/gnd.sym} -160 130 0 0 {name=l2 lab=GND}
-C {devices/code.sym} 350 -320 0 0 {name=STDCELLPATH
+C {devices/code.sym} 350 -330 0 0 {name=STDCELLPATH
 
 only_toplevel=true
 format="tcleval( @value )"

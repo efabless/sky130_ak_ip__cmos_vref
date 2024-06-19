@@ -230,7 +230,7 @@ electrical_parameters {
 
 		+
 		name: iterations
-		typical: 10
+		typical: 100
 
 		+
 		name: output_option
@@ -263,7 +263,7 @@ electrical_parameters {
 
 		+
 		name: iterations
-		typical: 10
+		typical: 100
 
 		+
 		name: output_option
@@ -296,7 +296,7 @@ electrical_parameters {
 
 		+
 		name: iterations
-		typical: 10
+		typical: 100
 
 		+
 		name: output_option
@@ -336,6 +336,10 @@ electrical_parameters {
 		typical: 27
 
 		+
+		name: Vena
+		typical: 1.8
+
+		+
 		name: corner
 		enumerate:  ss sf tt fs ff
 	}
@@ -364,7 +368,7 @@ electrical_parameters {
 
 		+
 		name: Vena
-		typical: 1.8
+		typical: 0
 
 		+
 		name: temperature
@@ -401,7 +405,7 @@ electrical_parameters {
 
 		+
 		name: iterations
-		typical: 100
+		typical: 1000
 
 		+
 		name: output_option
@@ -434,7 +438,7 @@ electrical_parameters {
 
 		+
 		name: iterations
-		typical: 100
+		typical: 1000
 
 		+
 		name: output_option
@@ -639,7 +643,7 @@ electrical_parameters {
 
 		+
 		name: corner
-		enumerate:  ss sf tt fs ff
+		enumerate:  ss tt fs ff
 
 	}
 
@@ -748,7 +752,7 @@ electrical_parameters {
 	variables {
 		name: time
 		display: Time
-		unit: {micro}s
+		unit: s
 
 		+
 		name: result
@@ -778,12 +782,12 @@ electrical_parameters {
 
 		+
 		name: tran_start
-		typical: 10
+		typical: 0
 		unit: {micro}s
 
 		+
 		name: tran_stop
-		typical: 50
+		typical: 300
 		unit: {micro}s
 
 		+
@@ -792,7 +796,7 @@ electrical_parameters {
 
 		+
 		name: corner
-		enumerate:  ss sf tt fs ff
+		enumerate: ss sf tt fs ff
 
 	}
 
@@ -818,7 +822,7 @@ electrical_parameters {
 
 		+
 		name: iterations
-		maximum: 100
+		maximum: 1000
 
 		+
 		name: output_option
@@ -851,7 +855,7 @@ electrical_parameters {
 
 		+
 		name: iterations
-		maximum: 100
+		maximum: 1000
 
 		+
 		name: output_option

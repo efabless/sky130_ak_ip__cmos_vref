@@ -34,7 +34,7 @@ lab=GND}
 N 270 10 270 40 {
 lab=vbg}
 N -160 10 -120 10 {
-lab=GND}
+lab=#net2}
 N 270 40 370 40 {
 lab=vbg}
 N 270 100 370 100 {
@@ -43,7 +43,8 @@ N 170 -50 170 10 {
 lab=GND}
 N 130 130 170 130 {
 lab=vptat}
-N -160 -50 -160 10 {}
+N -160 -50 -160 10 {
+lab=#net2}
 C {devices/vsource.sym} -190 -270 0 0 {name=Vavdd value="DC \{Vavdd\}"}
 C {devices/vdd.sym} -190 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -190 -240 0 0 {name=l8 lab=GND}
@@ -91,7 +92,7 @@ m=1}
 C {sky130_fd_pr/corner.sym} 60 -330 0 0 {name=CORNER only_toplevel=false corner=\{corner\}}
 C {devices/gnd.sym} -160 130 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 170 130 0 1 {name=l3 sig_type=std_logic lab=vptat}
-C {devices/code.sym} 310 -330 0 0 {name=STDCELLPATH
+C {devices/code.sym} 320 -330 0 0 {name=STDCELLPATH
 
 only_toplevel=true
 format="tcleval( @value )"

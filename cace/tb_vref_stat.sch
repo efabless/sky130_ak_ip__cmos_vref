@@ -57,7 +57,7 @@ N 120 250 220 250 {
 lab=GND}
 N 130 130 190 130 {
 lab=vptat}
-N -160 10 -160 40 {}
+N -160 -50 -160 10 {}
 C {devices/vsource.sym} -130 -270 0 0 {name=Vavdd value="dc \{Vavdd\}"}
 C {devices/vdd.sym} -130 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -130 -240 0 0 {name=l8 lab=GND}

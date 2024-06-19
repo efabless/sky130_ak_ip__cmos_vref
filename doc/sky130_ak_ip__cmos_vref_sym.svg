@@ -85,8 +85,8 @@
   stroke-width: 3.33327;
 }
 .l12{
-  fill: #0000ff; fill-opacity: 0.5;
-  stroke: #0000ff;
+  fill: #0044dd; fill-opacity: 0.5;
+  stroke: #0044dd;
   stroke-linecap:round;
   stroke-linejoin:round;
   stroke-width: 3.33327;

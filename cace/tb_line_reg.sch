@@ -34,15 +34,17 @@ lab=GND}
 N 320 10 320 40 {
 lab=vbg}
 N -160 10 -120 10 {
-lab=GND}
+lab=#net2}
 N 270 40 370 40 {
 lab=vbg}
 N 270 100 370 100 {
 lab=GND}
 N 170 -50 170 10 {
 lab=GND}
-N -160 -50 -160 10 {}
-C {devices/vsource.sym} -190 -270 0 0 {name=Vavdd value="DC 1.8"}
+N -160 -50 -160 10 {
+lab=#net2}
+C {devices/vsource.sym} -190 -270 0 0 {name=Vavdd value="DC \{Vavdd\}"
+}
 C {devices/vdd.sym} -190 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -190 -240 0 0 {name=l8 lab=GND}
 C {devices/code.sym} 210 -330 0 0 {name=stimuli
@@ -69,7 +71,7 @@ C {../xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
 C {devices/vdd.sym} -290 -130 0 0 {name=l1 lab=avdd}
 C {devices/vsource.sym} -290 -100 0 0 {name=Vsense1 value="dc 0"}
 C {devices/vdd.sym} -200 40 0 0 {name=l4 lab=dvdd}
-C {devices/vsource.sym} -30 -270 0 0 {name=Vdvdd value="DC \{Vdvdd\}"}
+C {devices/vsource.sym} -30 -270 0 0 {name=Vdvdd value="DC 1.8"}
 C {devices/vdd.sym} -30 -300 0 0 {name=l5 lab=dvdd}
 C {devices/gnd.sym} -30 -240 0 0 {name=l6 lab=GND}
 C {devices/capa.sym} 270 70 0 0 {name=C1
@@ -85,7 +87,7 @@ device=resistor
 m=1}
 C {sky130_fd_pr/corner.sym} 60 -330 0 0 {name=CORNER only_toplevel=false corner=\{corner\}}
 C {devices/gnd.sym} -160 130 0 0 {name=l2 lab=GND}
-C {devices/code.sym} 340 -320 0 0 {name=STDCELLPATH
+C {devices/code.sym} 340 -330 0 0 {name=STDCELLPATH
 
 only_toplevel=true
 format="tcleval( @value )"

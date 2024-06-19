@@ -1,4 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -30,7 +30,7 @@ lab=GND}
 N 130 -20 170 -20 {
 lab=GND}
 N -160 10 -120 10 {
-lab=GND}
+lab=#net2}
 N 170 -50 170 -20 {
 lab=GND}
 N 170 -20 170 10 {
@@ -45,6 +45,8 @@ N 130 40 200 40 {
 lab=vbg}
 N 130 130 200 130 {
 lab=vptat}
+N -160 -50 -160 10 {
+lab=#net2}
 C {devices/vsource.sym} -190 -270 0 0 {name=Vavdd value="DC 1.8"}
 C {devices/vdd.sym} -190 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -190 -240 0 0 {name=l8 lab=GND}
@@ -79,7 +81,6 @@ device="ceramic capacitor"}
 C {devices/gnd.sym} 410 40 0 0 {name=l9 lab=GND}
 C {devices/vdd.sym} -190 -130 0 0 {name=l11 lab=dvdd}
 C {devices/vsource.sym} -190 -100 0 0 {name=Vsense2 value="dc 0"}
-C {devices/gnd.sym} -160 10 0 0 {name=l12 lab=GND}
 C {devices/res.sym} 370 10 0 0 {name=R1
 value=\{Rload\}
 device=resistor
@@ -88,7 +89,7 @@ C {devices/lab_pin.sym} 200 40 0 1 {name=l2 sig_type=std_logic lab=vbg}
 C {sky130_fd_pr/corner.sym} 70 -330 0 0 {name=CORNER only_toplevel=false corner=\{corner\}}
 C {devices/gnd.sym} -160 130 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 200 130 0 1 {name=l13 sig_type=std_logic lab=vptat}
-C {devices/code.sym} 350 -340 0 0 {name=STDCELLPATH
+C {devices/code.sym} 350 -330 0 0 {name=STDCELLPATH
 
 only_toplevel=true
 format="tcleval( @value )"
